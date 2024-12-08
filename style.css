@@ -29,7 +29,7 @@
 
 .second_li:hover {
   color: #fff;
-  background-color:#FDC632;
+  background-color: #FDC632;
   cursor: pointer;
 }
 
@@ -182,14 +182,16 @@ header div .header-div .container {
 }
 
 .main-title-div h2,
-.section3-title-div h2 {
+.section3-title-div h2,
+.section5-title-div h2{
   text-align: center;
   color: #002347;
   font: normal 850 36px "Roboto";
 }
 
 .main-title-div h3,
-.section3-title-div h3 {
+.section3-title-div h3,
+.section5-title-div h3 {
   text-align: center;
   color: rgb(111, 111, 111);
   font: italic 540 16px "Roboto";
@@ -244,6 +246,7 @@ header div .header-div .container {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #eee;
 }
 
 .section3-bg-div .container {
@@ -259,8 +262,12 @@ header div .header-div .container {
 
 .course-info-img-div {
   max-height: 283px;
-  max-width: 360px;
+  max-width: 347px;
 }
+.course-info-img-div img{
+  object-fit: cover;
+}
+
 
 .courses-info-div {
   display: flex;
@@ -272,6 +279,7 @@ header div .header-div .container {
 .course-info-div {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 10px 10px;
 }
 
 .course-info-div:hover .course-info-img-div img {
@@ -279,7 +287,7 @@ header div .header-div .container {
 }
 
 .course-info-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 4px 16px, rgba(0, 0, 0, 0.156) 0px 8px 32px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.336);
 }
 
 .course-info-img-div {
@@ -467,4 +475,87 @@ header div .header-div .container {
 ::placeholder {
   font: 14px "Roboto";
   color: #7b838abe;
+}
+
+/*SECTION 5 styles*/
+.section5-bg-div{
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  align-items: center;
+}
+.section5-bg-div .container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:80px;
+}
+.section5-carts-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:15px;
+}
+
+.section5-cart-div h4{  
+  font: 500 20px "Rubik";
+  color: #002347;
+  text-align: center;
+  padding: 15px 0 5px 0;
+  transition:.4s;
+}
+.section5-cart-div h4:hover{
+  cursor: pointer;
+  color:#FDC632;
+}
+.section5-cart-div h5{
+  font: 400 14px "Roboto";
+  text-align: center;
+  color: #7b838a;
+  margin-bottom: 10px;
+}
+.section5-cart-div p{
+  font: 400 16px "Roboto";
+  text-align: center;
+  line-height: 25px;
+  color: #7b838a;
+  margin: 30px 0;
+}
+.section5-cart-div{
+  transition: .4s;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+.section5-cart-div:hover{
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.336);
+}
+.section5-cart-div:hover img{
+  scale: 1.2;
+}
+.section5-card-img-div img{
+  transition: .4s;
+}
+.section5-card-img-div{
+  overflow: hidden;
+}
+.section5-card-content-div{
+  padding:25px;
+}
+.section5-icons-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width:50%;
+  margin: 0 auto;
+}
+.section5-icons-div i{
+  font-size: 16px;
+  color:#7b838a ;
+  transition:.4s;
+}
+.section5-icons-div i:hover{
+  color:#FDC632 ;
+  cursor: pointer;
+  scale: 1.5;
 }
