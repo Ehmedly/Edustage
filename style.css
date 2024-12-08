@@ -42,25 +42,20 @@ li:hover .dropdown {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 600px;
+  gap: 50px;
+  width: 500px;
 }
-
-.navUlAndButton-div button {
-  color: #fdc632;
-  background-color: #002347;
-  transition: 0.3s;
-  border: 1px solid #002347;
-  padding: 8px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font: 500 13px "Roboto";
+.fa-magnifying-glass{
+  font-size: 14px;
+  color:#002347;
 }
-
+.fa-magnifying-glass:hover{
+  color:#FDC632;
+}
 .header-div {
   background: url("home-banner.jpg.webp")center/cover;
   height: 100vh;
 }
-
 .firstUl li a,
 .second_li {
   text-decoration: none;
@@ -183,7 +178,8 @@ header div .header-div .container {
 
 .main-title-div h2,
 .section3-title-div h2,
-.section5-title-div h2{
+.section5-title-div h2,
+.section6-title-div h2 {
   text-align: center;
   color: #002347;
   font: normal 850 36px "Roboto";
@@ -191,7 +187,8 @@ header div .header-div .container {
 
 .main-title-div h3,
 .section3-title-div h3,
-.section5-title-div h3 {
+.section5-title-div h3,
+.section6-title-div h3 {
   text-align: center;
   color: rgb(111, 111, 111);
   font: italic 540 16px "Roboto";
@@ -264,7 +261,8 @@ header div .header-div .container {
   max-height: 283px;
   max-width: 347px;
 }
-.course-info-img-div img{
+
+.course-info-img-div img {
   object-fit: cover;
 }
 
@@ -478,84 +476,325 @@ header div .header-div .container {
 }
 
 /*SECTION 5 styles*/
-.section5-bg-div{
+.section5-bg-div {
   height: 100vh;
   background: #eee;
   display: flex;
   align-items: center;
 }
-.section5-bg-div .container{
+
+.section5-bg-div .container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:80px;
+  gap: 80px;
 }
-.section5-carts-div{
+
+.section5-carts-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:15px;
+  gap: 15px;
 }
 
-.section5-cart-div h4{  
+.section5-cart-div h4 {
   font: 500 20px "Rubik";
   color: #002347;
   text-align: center;
   padding: 15px 0 5px 0;
-  transition:.4s;
+  transition: .4s;
 }
-.section5-cart-div h4:hover{
+
+.section5-cart-div h4:hover {
   cursor: pointer;
-  color:#FDC632;
+  color: #FDC632;
 }
-.section5-cart-div h5{
+
+.section5-cart-div h5 {
   font: 400 14px "Roboto";
   text-align: center;
   color: #7b838a;
   margin-bottom: 10px;
 }
-.section5-cart-div p{
+
+.section5-cart-div p {
   font: 400 16px "Roboto";
   text-align: center;
   line-height: 25px;
   color: #7b838a;
   margin: 30px 0;
 }
-.section5-cart-div{
+
+.section5-cart-div {
   transition: .4s;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
 }
-.section5-cart-div:hover{
+
+.section5-cart-div:hover {
   box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.336);
 }
-.section5-cart-div:hover img{
+
+.section5-cart-div:hover img {
   scale: 1.2;
 }
-.section5-card-img-div img{
+
+.section5-card-img-div img {
   transition: .4s;
 }
-.section5-card-img-div{
+
+.section5-card-img-div {
   overflow: hidden;
 }
-.section5-card-content-div{
-  padding:25px;
+
+.section5-card-content-div {
+  padding: 25px;
 }
-.section5-icons-div{
+
+.section5-icons-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width:50%;
+  max-width: 50%;
   margin: 0 auto;
 }
-.section5-icons-div i{
+
+.section5-icons-div i {
   font-size: 16px;
-  color:#7b838a ;
-  transition:.4s;
+  color: #7b838a;
+  transition: .4s;
 }
-.section5-icons-div i:hover{
-  color:#FDC632 ;
+
+.section5-icons-div i:hover {
+  color: #FDC632;
   cursor: pointer;
   scale: 1.5;
+}
+
+/*SECTION 6 styles*/
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.section6-bg-div {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section6-title-div h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section6-title-div h3 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.section6-cards-div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section6-card-div {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.section6-card-div:hover {
+  transform: translateY(-10px);
+}
+
+.section6-card-img-div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.section6-card-content-div h2 {
+  font-size: 22px;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.section6-card-content-div h3 {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}*/
+
+.section6-bg-div {
+  background: #eee;
+  height: 100vh;
+}
+
+.section6-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 150px;
+}
+
+.section6-cards-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section6-card-div {
+  display: flex;
+  gap: 35px;
+  padding: 40px;
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.section6-card-div:hover {
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.193);
+  cursor:default;
+}
+
+.section6-card-img-div img {
+  object-fit: cover;
+  height: 121.66px;
+  width: 121.66px;
+  border-radius: 5px;
+}
+
+.section6-card-content-div {
+  max-width: 270px;
+}
+
+.section6-card-content-div h2 {
+  font: 500 20px "Rubik";
+  color: #002347;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.section6-card-content-div h3 {
+  font: 400 16px "Roboto";
+  color: #7b838a;
+  line-height: 25px;
+}
+
+/*FOOTER PART*/
+footer{
+  height: 73vh;
+  background: #002347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container{
+  position: relative;
+  height: 60%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer h5{
+  font:500 18px "Rubik";
+  margin-bottom: 35px;
+  color: #fff;
+  text-transform: capitalize;
+}
+footer a, footer p{
+  transition: .3s;
+  color: #7b838a;
+  font: 400 16px "Roboto";
+  line-height: 40px;
+  text-transform: capitalize;
+}
+footer a:hover{
+  color: white;
+  cursor: pointer;
+}
+
+footer input{
+  padding: 11px 22px;
+  width: 17vw;
+  background-color: #334f6c;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+footer button{
+  position:relative;
+  left:-50px;
+  font: 500 12px "Rubik";
+  padding: 8px 18px;
+  color: #002347;
+  border: 1px solid #FDC632;
+  background-color: #FDC632;
+  text-transform: uppercase;
+  margin-top: 19px;
+}
+footer button:hover{
+  cursor: pointer;
+}
+.footer-inputAndbutton-div{
+  display: flex;
+  align-items: center;
+}
+::placeholder{
+  text-transform: capitalize;
+}
+.footer-icons-div{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer h6{
+  position: absolute;
+  left:0;
+  bottom:25px;
+  font: 400 16px "Roboto";
+  color: #fff;
+}
+footer h6 a{
+  color: #FDC632;
+}
+footer h6 a{
+  color: #FDC632;
+}
+.footer-icons-div i{
+  font-size: 16px;
+  color: #ccc;
+}
+.footer-icons-div a{
+  padding:12px;
+  background-color: #334f6c;
+  text-align: center;
 }
