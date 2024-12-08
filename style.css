@@ -1,0 +1,470 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*Header styles*/
+.dropdown {
+  display: none;
+}
+
+.second_ul {
+  margin-top: 25px !important;
+}
+
+.second_li {
+  display: block !important;
+  margin: 1px 0 !important;
+  padding: 15px 30px !important;
+  width: 200px;
+  background-color: #fff;
+  transition: 4s;
+}
+
+.second_li:hover {
+  color: #fff;
+  background-color:#FDC632;
+  cursor: pointer;
+}
+
+li:hover .dropdown {
+  display: block;
+  position: absolute;
+}
+
+.navUlAndButton-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.navUlAndButton-div button {
+  color: #fdc632;
+  background-color: #002347;
+  transition: 0.3s;
+  border: 1px solid #002347;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font: 500 13px "Roboto";
+}
+
+.header-div {
+  background: url("home-banner.jpg.webp")center/cover;
+  height: 100vh;
+}
+
+.firstUl li a,
+.second_li {
+  text-decoration: none;
+  color: #002347;
+  font: 550 14px "Roboto";
+  transition: 0.3s;
+}
+
+.firstUl a:hover {
+  color: #fdc632;
+  cursor: pointer;
+}
+
+nav .firstUl li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.header-div .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+header div .header-div .container {
+  padding: 20px 0;
+}
+
+.content-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 89vh;
+}
+
+.content-div h1 {
+  color: #002347;
+  text-transform: uppercase;
+  font: 500 22px "Roboto";
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.content-div h2 {
+  color: #002347;
+  text-transform: uppercase;
+  font: 500 42px "Roboto";
+  margin: 0 0 40px 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.centent-div-links-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 445px;
+}
+
+.content-link1 {
+  color: #FDC632;
+  background-color: #002347;
+  transition: 0.3s;
+  border: 1px solid #002347;
+  padding: 15px 45px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font: 500 13px "Roboto";
+}
+
+.content-link1:hover {
+  color: #002347;
+  background-color: transparent;
+}
+
+
+.content-link2 {
+  color: #002347;
+  background-color: #fdc632;
+  padding: 15px 45px;
+  transition: 0.3s;
+  border: 1px solid #fdc632;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font: 500 13px "Roboto";
+}
+
+.content-link2:hover {
+  color: #fdc632;
+  background-color: #002347;
+  border: 1px solid #002347;
+}
+
+/*MAIN PART STYLES*/
+/*2nd SECTION*/
+.section2-bg-div {
+  height: 100vh;
+  background: #eee;
+}
+
+.section2-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  height: 100%;
+}
+
+.main-title-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.main-title-div h2,
+.section3-title-div h2 {
+  text-align: center;
+  color: #002347;
+  font: normal 850 36px "Roboto";
+}
+
+.main-title-div h3,
+.section3-title-div h3 {
+  text-align: center;
+  color: rgb(111, 111, 111);
+  font: italic 540 16px "Roboto";
+  padding-top: 10px;
+}
+
+.main-features-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-height: fit-content;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.feature-div {
+  max-width: 350px;
+  max-height: fit-content;
+  padding: 30px;
+  background-color: rgb(246, 246, 255);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.feature-div:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+.feature-div h4 {
+  color: #002347;
+  font: normal 650 20px "Roboto";
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+
+.feature-div h5 {
+  font: normal 16px "Roboto";
+  color: rgb(145, 143, 143);
+  line-height: 25px;
+}
+
+.feature-div i {
+  color: #002347;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+/*3rd SECTION*/
+.section3-bg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section3-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.course-info-content-div {
+  padding: 10px;
+}
+
+.course-info-img-div {
+  max-height: 283px;
+  max-width: 360px;
+}
+
+.courses-info-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.course-info-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-info-div:hover .course-info-img-div img {
+  scale: 1.2;
+}
+
+.course-info-div:hover {
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 4px 16px, rgba(0, 0, 0, 0.156) 0px 8px 32px;
+}
+
+.course-info-img-div {
+  overflow: hidden;
+}
+
+.course-info-img-div img {
+  transition: 0.5s;
+}
+
+
+
+.section3-title-div {
+  text-align: center;
+}
+
+.course-info-content-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-info-content-div .design-p {
+  font: 13px sans-serif;
+  padding: 8px 20px;
+  color: #fff;
+  background: #002347;
+  text-transform: uppercase;
+  max-width: fit-content;
+}
+
+.course-info-content-div h5 {
+  font: 550 20px sans-serif;
+  color: #002347;
+  text-transform: capitalize;
+  max-width: fit-content;
+}
+
+.course-info-content-div h6 {
+  font: 16px sans-serif;
+  color: #7b838a;
+  max-width: 90%;
+  line-height: 27px;
+}
+
+.author-img-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+}
+
+.like-and-follower-stat-div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.like-and-follower-stat-div div {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.statistics,
+.statistics p,
+.statistics h2 {
+  color: #002347;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+/*SECTION 4 STYLES*/
+.section4-bg-div {
+  height: 100vh;
+  background-color: #002347;
+}
+
+.section4-bg-div .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.content-and-squares h2 {
+  font: 550 42px sans-serif;
+  color: #fff;
+
+}
+
+.content-and-squares {
+  max-width: 60%;
+}
+
+.content-and-squares h3 {
+  max-width: 700px;
+  line-height: 25px;
+  font: 400 16px "Roboto";
+  color: #fff;
+  margin: 25px 0 80px 0;
+}
+
+.date-div {
+  border: 1px solid rgb(139, 139, 139);
+  width: 165px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 7px;
+  background-color: #334f6c;
+}
+
+.dates-div {
+  display: flex;
+  gap: 10px;
+}
+
+.dates-div p {
+  font: 600 36px "Roboto";
+  color: #fff;
+}
+
+.dates-div p span {
+  font: 500 16px "Roboto";
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.register-course-form input {
+  display: block;
+  outline: none;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 2px solid #d5d5d56f;
+  background-color: #eee;
+  width: 100%;
+}
+
+.register-course-form {
+  background-color: #eee;
+  padding: 40px;
+  width: 350px;
+}
+
+.register-course-form button {
+  width: 100%;
+  border-style: none;
+  background-color: #fdc632;
+  padding: 15px;
+  font: 600 13px "Roboto";
+  color: #002347;
+  margin-top: 25px;
+  transition: .3s;
+}
+
+.register-course-form button:hover {
+  background-color: #002347;
+  color: #fdc632;
+  cursor: pointer;
+}
+
+.register-content h5 {
+  font: 550 24px "Roboto";
+  color: #002347;
+  text-align: center;
+}
+
+.register-content h6 {
+  font: 16px "Roboto";
+  color: #7b838a;
+  margin: 5px 0 30px 0;
+  text-align: center;
+}
+
+::placeholder {
+  font: 14px "Roboto";
+  color: #7b838abe;
+}
