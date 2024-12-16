@@ -811,7 +811,10 @@ footer h6 a{
   .main-feature-div {
     width: 100%;
   }
-  .header-div {
-    height: 50vh;
+  .section2-bg-div {
+    height: 150vh;
+  }
+  .section2-bg-div .container {
+    gap: 50px;
   }
 }
